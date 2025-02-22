@@ -19,7 +19,7 @@ const PrivateAccessModal = ({ show, groupId, title, message, onClose }) => {
   };
 
   return (
-    <div className="modal-overlay">
+    <div className="modal-overlay-private">
       <div className="modal-content-private">
         <h2 className="modal-title-private">{title}</h2>
         <p className="modal-message-private">{message}</p>
@@ -33,5 +33,6 @@ const PrivateAccessModal = ({ show, groupId, title, message, onClose }) => {
     </div>
   );
 };
+
 
 export default PrivateAccessModal;

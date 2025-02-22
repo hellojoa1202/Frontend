@@ -10,6 +10,7 @@
     position: relative;
   }
   
+  
   .modal-title-private {
     font-family: "Spoqa Han Sans Neo";
     font-weight: 700;
@@ -36,5 +37,28 @@
     height: 50px; /* ✅ 버튼 높이 50px */
     margin-top: 60px; /* ✅ 텍스트에서 60px 아래 */
     cursor: pointer;
+  }
+  
+  .modal-overlay-private {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* 배경 어둡게 처리 */
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center;     /* 수직 중앙 정렬 */
+    z-index: 1000;           /* 다른 요소 위에 표시되도록 설정 */
+  }
+  
+  .modal-content-private {
+    width: 480px;
+    height: 298px;
+    background: white;
+    padding: 0;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
   }
   

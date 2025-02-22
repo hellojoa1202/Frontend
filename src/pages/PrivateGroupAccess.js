@@ -32,7 +32,7 @@ const PrivateGroupAccess = () => {
     }
   };
 
-  // 모달 닫을 때 홈으로 이동하며, state에 isPublic:false와 autoToggle:true 전달
+  // 모달 닫기
   const handleModalClose = () => {
     setShowModal(false);
     navigate("/", { state: { isPublic: false, autoToggle: true } });
